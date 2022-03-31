@@ -1,5 +1,5 @@
 /* Esquema de cores */
-#lightMode {
+.lightMode {
 --bodyBackground: linear-gradient(
   90deg,
   rgba(65, 184, 131, 1) 0%,
@@ -15,7 +15,7 @@
 --fontButtonColor: #fff;
 }
 
-#darkMode {
+.darkMode {
   --bodyBackground: linear-gradient(
   90deg,
   #2d555e 0%,
