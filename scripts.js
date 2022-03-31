@@ -1,8 +1,21 @@
 const inputElement = document.querySelector('.new-task-input')
 const addTaskButton = document.querySelector('.new-task-button')
 const tasksContainer = document.querySelector('.tasks-container')
+const body = document.querySelector('#body')
+const modeButton = document.querySelector('.mode-button')
 
 const validateInput = () => inputElement.value.trim().length > 0
+
+const changeMode = () => {
+  if (body.classList.contains('lightMode')) {
+    body.classList.remove('lightMode')
+    return body.classList.add('darkMode')
+  }
+  if (body.classList.contains('darkMode')) {
+    body.classList.remove('darkMode')
+    return body.classList.add('lightMode')
+  }
+}
 
 const handleAddTask = () => {
   const inputIsValid = validateInput()
@@ -126,6 +139,7 @@ const refreshTasks = () => {
 refreshTasks()
 
 addTaskButton.addEventListener('click', () => handleAddTask())
+modeButton.addEventListener('click', () => changeMode())
 
 inputElement.addEventListener('change', () => {
   handleInputChange()

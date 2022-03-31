@@ -17,23 +17,23 @@
 
 .darkMode {
   --bodyBackground: linear-gradient(
-  90deg,
-  #2d555e 0%,
-  #1e3a5f 100%
-  );
-
+    90deg,
+    #2d555e 0%,
+    #1e3a5f 100%
+    );
     
-  --backgroundColor: #3c3f43;
-  --borderColor: #202124;
-  --buttonColor: #2d555e;
-  --buttonHoverColor: #47646b;
-  --tittleColor: #d3d4d8;
-  --fontColor: #fff;
-  --fontButtonColor: #202124;
+    
+    --backgroundColor: #3c3f43;
+    --borderColor: #202124;
+    --buttonColor: #2d555e;
+    --buttonHoverColor: #47646b;
+    --tittleColor: #d3d4d8;
+    --fontColor: #fff;
+    --fontButtonColor: #202124;
   }
   
-* {
-  margin: 0;
+  * {
+    margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -45,6 +45,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.4s;
 }
 
 .container {
@@ -176,4 +177,5 @@ body {
 
 .completed {
   text-decoration: line-through;
+  text-decoration-color: var(--fontColor);
 }
