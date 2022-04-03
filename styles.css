@@ -1,7 +1,7 @@
 /* Esquema de cores */
 .lightMode {
 --bodyBackground: linear-gradient(
-  90deg,
+  45deg,
   rgba(65, 184, 131, 1) 0%,
   rgba(0, 212, 255, 1) 100%
   );
@@ -17,7 +17,7 @@
 
 .darkMode {
   --bodyBackground: linear-gradient(
-    90deg,
+    45deg,
     #2d555e 0%,
     #1e3a5f 100%
     );
